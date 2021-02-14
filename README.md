@@ -12,6 +12,8 @@ The most important functionality of the data structure is a key-value map, where
 ## Loading from a OS or ZIP folder structure
 The path to the asset can be directly in the asset folder of the file system, but should also be able to be navigated as the folder structure in a Zip file. The Zip format is specificaly usefull as github standard creates zip files of repositories, making it easy to dowload outside of Git. Other container formats may also be possible to navigate as a .BIG file is often used to save disk space, as many small files do not fill up the disk sectors completely. A BIG file generaly offers security by obscurity as it's not readable for normal users, thus it's not in the Open spirit of things.
 
+Modern developments in hardware have lead to reading compressed data from disk and decrompressing it with the CPU, being faster then reading uncompressed data from disk. The CPU generaly being overpowered and underutilized.
+
 ## Loading based on version
 It should be possible to determin to witch version the asset link belongs to, either by an attribute on the asset link or containing the asset link in a version. container. The versioning should be done by Mayor.Minor.Bugfix.Build wich is common on Windows systems.
 
